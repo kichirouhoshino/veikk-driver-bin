@@ -1,15 +1,15 @@
 # Maintainer: Rodlan Isagani E. Bernabe <rodlanisagani@gmail.com>
 pkgname=vktablet
-pkgver=3.5.6
-pkgrel=2
+pkgver=3.5.7
+pkgrel=9
 pkgdesc="Veikk tablet driver retrieved from official veikk website"
 arch=('x86_64')
 license=('GPL-3.0')
-source=("https://veikk.com/image/catalog/Software/vktablet-${pkgver}-${pkgrel}.${CARCH}.tar-1.gz")
-sha256sums=('a54670d517ad6a81f15c95f13f24ebfde427e267987d8f27b30e886d727c1e84')
+source=("https://veikk.com/image/catalog/Software/vktablet-${pkgver}-${pkgrel}.${CARCH}.tar.gz")
+sha256sums=('b53d51557915ec9d043059f36d5eb87d3bcddc6e44e930048a69547570d75f66')
 
 package() {
-    tar -xzf "$srcdir/vktablet-${pkgver}-${pkgrel}.${CARCH}.tar-1.gz" -C "$srcdir"
+    tar -xzf "$srcdir/vktablet-${pkgver}-${pkgrel}.${CARCH}.tar.gz" -C "$srcdir"
     cd "$srcdir/vktablet-${pkgver}-${pkgrel}.${CARCH}"
     app=vktablet
     appdir="$pkgdir/usr/lib/vktablet"

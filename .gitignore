@@ -8,6 +8,7 @@
 *.log
 *.log.*
 *.sig
+*.gz
 
 pkg/
 src/
